@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
 import { ComponentsModule } from './components/components.module';
 import { tareasReducer } from './store/reducers/tareas.reducer';
+import { TareasEffects } from './store/effects/tareas.effect';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,7 @@ import { tareasReducer } from './store/reducers/tareas.reducer';
       maxAge: 25,
       logOnly: environment.production,
     }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([TareasEffects]),
   ],
   bootstrap: [AppComponent],
 })
