@@ -1,10 +1,10 @@
 <mat-list-item *ngIf="tarea">
-  <div>
+  <div (click)="despacharCompletarTarea()">
     <input type="checkbox" mat-input [checked]="tarea.completado" />
     <h3 [ngClass]="{ completado: tarea.completado }">{{ tarea.nombre }}</h3>
   </div>
 
-  <button mat-icon-button color="warn">
+  <button (click)="despacharEliminarTarea()" mat-icon-button color="warn">
     <mat-icon>delete</mat-icon>
   </button>
 </mat-list-item>

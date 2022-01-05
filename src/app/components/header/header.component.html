@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Cantidad de tareas: 0</span>
+    <span>Cantidad de tareas: {{ (tareas$ | async)?.length }}</span>
   </mat-toolbar-row>
 </mat-toolbar>

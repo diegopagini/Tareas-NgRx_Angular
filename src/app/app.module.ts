@@ -8,6 +8,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { EffectsModule } from '@ngrx/effects';
 import { ComponentsModule } from './components/components.module';
+import { tareasReducer } from './store/reducers/tareas.reducer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     ComponentsModule,
     //NgRx
-    StoreModule.forRoot({}, {}),
+    StoreModule.forRoot({ app: tareasReducer }),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,

@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Tareas completadas: 0</span>
-    <span>Tareas incompletas: 0</span>
+    <span>Tareas completadas: {{ (tareasCompletadas$ | async)?.length }}</span>
+    <span>Tareas incompletas: {{ (tareasIncompletas$ | async)?.length }}</span>
   </mat-toolbar-row>
 </mat-toolbar>
