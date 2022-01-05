@@ -1,0 +1,21 @@
+<mat-card class="tareas">
+  <mat-card-header>
+    <mat-card-title> Tareas </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Agregar tarea</mat-label>
+        <input matInput autocomplete="off" />
+      </mat-form-field>
+
+      <button mat-mini-fab color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+
+    <mat-list>
+      <app-tarea *ngFor="let tarea of [1, 1, 1, 1, 1]"></app-tarea>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

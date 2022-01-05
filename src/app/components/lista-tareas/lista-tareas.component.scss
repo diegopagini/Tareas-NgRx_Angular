@@ -1,0 +1,12 @@
+.tareas {
+  min-width: 50vw;
+
+  div {
+    align-items: center;
+    display: flex;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+}

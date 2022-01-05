@@ -1,0 +1,23 @@
+mat-list-item {
+  align-items: center;
+  background-color: #fafafa;
+  display: flex;
+
+  div {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  ::ng-deep .mat-list-item-content {
+    justify-content: space-between;
+  }
+}
+
+.completado {
+  text-decoration: line-through;
+}

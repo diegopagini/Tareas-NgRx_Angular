@@ -1,0 +1,9 @@
+@import "../../../assets/styles/mixins";
+
+mat-toolbar-row {
+  @include center;
+
+  span {
+    margin: 0 3rem;
+  }
+}
